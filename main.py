@@ -30,6 +30,7 @@ counts the maximum 20,015 km).
 Deterministic: no clock, no randomness; every answer is a pure function
 of the photo bytes. No model calls, no network besides the env API.
 """
+# Pure Python DC-coefficient JPEG color-statistic geolocator entry.
 import json
 import os
 import sys
@@ -419,6 +420,7 @@ def decide(rows):
 
 # ---------------------------------------------------------------------- main
 
+# Main entry point for the photo geolocator application.
 def main():
     env = os.environ.get("MAKEFUN_ENV_URL", "").rstrip("/")
     if not env:
