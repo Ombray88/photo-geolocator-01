@@ -389,6 +389,7 @@ PRIOR = (56.0, 28.0)       # error-minimising constant for this distribution
 AMERICAS = (35.0, -85.0)   # bright open scenes: the Americas
 S_TROPICS = (-15.0, 25.0)  # red-dirt scenes: southern tropics
 
+# Evaluates the input rows and returns the optimal decision.
 def decide(rows):
     """rows: block-average RGB thumbnail. Returns (lat, lon)."""
     h = len(rows)
